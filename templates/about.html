@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ERNAZ | Hakkımızda</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+</head>
+  <body class="bg-dark">
+    {% include 'navbar.html' %}
+    <div id="carouselExample" class="carousel slide">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="https://picsum.photos/id/256/600/250" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="https://picsum.photos/id/234/600/250" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="https://picsum.photos/id/253/600/250" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+
+    <div class="container-fluid mt-5">
+      <div class="row">
+        <div class="col-sm-2"></div>
+        <div class="col-sm-4 px-5">
+          <h4 class="text">Vizyonumuz</h4>
+          <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero perspiciatis totam fugiat. Omnis consectetur incidunt ducimus amet ut alias aliquam eveniet quos vel. Nam maxime iusto, ipsam itaque eligendi in porro blanditiis laudantium suscipit aliquam quibusdam error animi illum voluptas. Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi maxime autem fuga iure earum itaque, sit exercitationem quasi enim est tempore minima, ut deserunt qui nobis voluptates totam. Impedit, repellat.</p>
+        </div>
+        <div class="col-sm-4 px-5 border-start ">
+          <h4 class="text">Misyonumuz</h4>
+          <p class="text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis mollitia quasi placeat velit. A, provident. Ex magnam soluta cupiditate voluptatem odit dolorem consequatur voluptas iusto quo quibusdam id omnis saepe quis dolorum sint exercitationem, fuga laborum nobis laudantium vitae? Commodi? Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias unde quidem cupiditate doloribus, quas maxime dolores perspiciatis recusandae eveniet deleniti itaque aperiam commodi error ipsa, excepturi fugit adipisci quam saepe!</p>
+        </div>
+        <div class="col-sm-2"></div>
+          <div class="col-sm-2"></div>
+      
+    </div>
+    <div class="container-fluid my-5">
+      <div class="row my-5" >
+          <div class="col-sm-1"></div>
+          <div class="col-sm-1 "><img class="rounded-circle" src="https://picsum.photos/id/237/100/100" alt=""></div>
+          <div class="col-sm-1 "><img class="rounded-circle" src="https://picsum.photos/id/238/100/100" alt  =""></div>
+          <div class="col-sm-1 "><img class="rounded-circle" src="https://picsum.photos/id/239/100/100" alt  =""></div>
+          <div class="col-sm-1 "><img class="rounded-circle" src="https://picsum.photos/id/240/100/100" alt  =""></div>
+          <div class="col-sm-1 "><img class="rounded-circle" src="https://picsum.photos/id/241/100/100" alt  =""></div>
+          <div class="col-sm-1 "><img class="rounded-circle" src="https://picsum.photos/id/242/100/100" alt  =""></div>
+          <div class="col-sm-1 "><img class="rounded-circle" src="https://picsum.photos/id/243/100/100" alt  =""></div>
+          <div class="col-sm-1 "><img class="rounded-circle" src="https://picsum.photos/id/244/100/100" alt  =""></div>
+          <div class="col-sm-1 "><img class="rounded-circle" src="https://picsum.photos/id/236/100/100" alt  =""></div>
+          <div class="col-sm-1"></div>
+          
+      </div>
+    </div>
+    <br><br><br>
+
+
+    
+    {% include 'footer.html' %}
+    <script src="{{ url_for('static', filename='js/style.js') }}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+</body>
+</html>

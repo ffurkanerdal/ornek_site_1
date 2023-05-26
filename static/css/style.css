@@ -1,0 +1,153 @@
+.nav-item{
+    float: left !important;
+}
+.navs:hover{
+  background-color: #212529;
+  color: wheat !important;
+}
+
+.text{
+   color:wheat !important;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* CARD */
+/*card*/
+.card-container {
+  display: flex;
+  gap: 5px;
+}
+
+.body{
+  background-color: #212529;
+}
+
+.card {
+  
+  width: 100%;
+  height: 500px;
+  border-radius: 4px;
+  
+  display:inline-flex;
+  gap: 5px;
+  padding: .4em;
+}
+
+.card p {
+  height: 100%;
+  flex: 1;
+  overflow: hidden;
+  cursor: pointer;
+  border-radius: 2px;
+  transition: all 0.7s;
+  background: wheat;
+  border: 1px solid white;
+  display:flexbox;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.card p span {
+  min-width: 14m;
+  padding: .5em;
+  text-align: center;
+  transform: rotate(-90deg);
+  transition: all .5s;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+}
+
+.card p:hover span {
+  transform: rotate(0);
+}
+
+#bir{
+    background-image: url(https://picsum.photos/1500/100?grayscale);
+    max-width: 100%;
+    max-height: 100%;
+}
+
+#bir:hover {
+  flex: 10;
+  background-image: url(https://picsum.photos/1500/299?grayscale);
+  max-width: 100%;
+  max-height: 100%;
+}
+
+#iki{
+    background-image: url(https://picsum.photos/1500/100?grayscale);
+    max-width: 100%;
+    max-height: 100%;
+}
+
+#iki:hover {
+  flex: 10;
+  background-image: url(https://picsum.photos/500/300?grayscale);}
+
+#uc{
+    background-image: url(https://picsum.photos/1500/100?grayscale);
+    max-width: 100%;
+    max-height: 100%;}
+
+#uc:hover {
+  flex: 10;
+  background-image: url(https://picsum.photos/500/300?grayscale);}
+
+#dort{
+    background-image: url(https://picsum.photos/1500/100?grayscale);
+    max-width: 100%;
+    max-height: 100%;}
+
+#dort:hover {
+  flex: 10;
+  background-image: url(https://picsum.photos/500/300?grayscale);}
+
+
+
+  /*  CARD END */
+
+
+  .image-container {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 100%; /* Resmin en-boy oranını korur */
+  }
+  
+  .image-container img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Resmin boyutunu korurken kırpmasını sağlar */
+  }
+  
+  .image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #ffffff;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  .image-overlay p {
+    text-align: center;
+    font-size: 18px;
+  }
+  
+  .image-container:hover .image-overlay {
+    opacity: 1;
+  }
+    
+  .col-sm-4{
+   padding-top: 2%;
+  }

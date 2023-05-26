@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+</head>
+  <body class="bg-dark">
+    {% include 'navbar.html' %}
+
+    
+    
+        
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-2"></div>
+                    <div class="col-sm-8">
+                        <div class="image">
+                            <div id="carouselExample" class="carousel slide" >
+                                <div class="carousel-inner">
+                                  <div class="carousel-item active">
+                                    <img src="https://picsum.photos/id/237/600/400"  class="d-block  w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="https://picsum.photos/id/238/600/400"  class="d-block  w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="https://picsum.photos/id/236/600/400"  class="d-block  w-100" alt="...">
+                                  </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                  <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                  <span class="visually-hidden">Next</span>
+                                </button>
+                              </div>
+                              <div class="mt-5">
+                                <h1 class="text text-center">{{ header }}</h1>
+                                <p class="text">{{ article }}</p>
+                              </div>
+                        </div>
+                    <div class="col-sm-2"></div>
+                </div>
+            </div>
+        
+    
+    <div>{{ project }}</div>
+
+    <div class="container-fluid my-5">
+      <div class="row my-5" >
+          <div class="col-sm-1"></div>
+          <div class="col-sm-1 "><img class="rounded-circle" src="https://picsum.photos/id/237/100/100" alt=""></div>
+          <div class="col-sm-1 "><img class="rounded-circle" src="https://picsum.photos/id/238/100/100" alt  =""></div>
+          <div class="col-sm-1 "><img class="rounded-circle" src="https://picsum.photos/id/239/100/100" alt  =""></div>
+          <div class="col-sm-1 "><img class="rounded-circle" src="https://picsum.photos/id/240/100/100" alt  =""></div>
+          <div class="col-sm-1 "><img class="rounded-circle" src="https://picsum.photos/id/241/100/100" alt  =""></div>
+          <div class="col-sm-1 "><img class="rounded-circle" src="https://picsum.photos/id/242/100/100" alt  =""></div>
+          <div class="col-sm-1 "><img class="rounded-circle" src="https://picsum.photos/id/243/100/100" alt  =""></div>
+          <div class="col-sm-1 "><img class="rounded-circle" src="https://picsum.photos/id/244/100/100" alt  =""></div>
+          <div class="col-sm-1 "><img class="rounded-circle" src="https://picsum.photos/id/236/100/100" alt  =""></div>
+          <div class="col-sm-1"></div>
+          
+      </div>
+    </div>
+    <br><br><br>
+
+    
+    {% include 'footer.html' %}
+    <script src="{{ url_for('static', filename='js/style.js') }}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+</body>
+</html>
